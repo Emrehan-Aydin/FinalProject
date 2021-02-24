@@ -47,10 +47,10 @@ namespace DataAcces.Concrete.InMemory
             throw new NotImplementedException();
         }
 
-        public List<Product> GetAllByCategory(int CategoryId)
-        {
-            return _product.Where(p => p.CategoryId == CategoryId).ToList();
-        }
+        //public List<Product> GetAllByCategory(int CategoryId)
+        //{
+        //    return _product.Where(p => p.CategoryId == CategoryId).ToList();
+        //}
 
         public List<ProductDetailDto> GetProductDetails()
         {
