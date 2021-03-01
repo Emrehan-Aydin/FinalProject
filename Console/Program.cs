@@ -10,7 +10,7 @@ namespace ConsoleUI
         static void Main(string[] args)
         {
             ProductManager productManager = new ProductManager(new EfProductDal());
-            var result = productManager.GetAll();
+            var result = productManager.GetProductDetails();
             if(result.Success==false)
             {
                 Console.WriteLine(result.Message);
@@ -23,7 +23,7 @@ namespace ConsoleUI
             //{
             //    Console.WriteLine(item.ProductName);
             //}
-            //ProductTest();
+            ProductTest();
             //CategoryTest();
 
         }
