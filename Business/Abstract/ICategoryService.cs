@@ -1,4 +1,5 @@
-﻿using Entities.Concrete;
+﻿using Core.Utilities.Results;
+using Entities.Concrete;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -7,7 +8,7 @@ namespace DataAcces.Abstract
 {
     public interface ICategoryService
     {
-        List<Category> GetAll();
-        Category GetAllById(int categoryId);
+        IDataResult<List<Category>> GetAll();
+        IDataResult<Category> GetAllById(int categoryId);
     }
 }
